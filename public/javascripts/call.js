@@ -13,9 +13,9 @@
   })
   .done(function(res) {
     var result = JSON.parse(res);
-    var allTrails = result['features'];
+    var allParks = result['features'];
 
-    allTrails.forEach(function(trail) {
+    allParks.forEach(function(trail) {
 
       var trailClass = trail.attributes.CLASS;
       var trailCondition = trail.attributes.CONDITION;
@@ -61,8 +61,6 @@
       }
 
     });
-
-      console.log(ADA);
 
       // Set this to global window for now; I know its nasty
       window.PARKS = ADA;
