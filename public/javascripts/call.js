@@ -33,7 +33,7 @@
     console.log('Error: ' + err.status);
   });
 
-  // Wait a split second for ajax call
+  // Wait a split second for ajax call; the following merges parks with same location
   setTimeout(function () {
 
     ADA.parks.forEach(function (sourcePark) {
